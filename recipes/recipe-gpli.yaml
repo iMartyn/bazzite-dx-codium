@@ -10,5 +10,5 @@ base-image: ghcr.io/ublue-os/bazzite-dx
 image-version: latest # latest is also supported if you want new updates ASAP
 
 modules:
-- from-file: codum-base.yaml
+- from-file: codium-base.yaml
 - from-file: extras-glpi.yaml
