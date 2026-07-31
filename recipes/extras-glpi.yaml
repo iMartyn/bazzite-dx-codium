@@ -1,0 +1,10 @@
+modules:
+  - type: files
+    files:
+      - source: system
+        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+
+  - type: dnf
+    install:
+      packages:
+        - glpi-agent
