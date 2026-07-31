@@ -1,9 +1,9 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
-name: bazzite-dx-codium
+name: bazzite-dx-codium-glpi
 # description will be included in the image's metadata
-description: Spin of Bazzite-DX without vscode, vscodium instead
+description: Spin of Bazzite-DX without vscode, vscodium instead, plus glpi for work's agent
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/bazzite-dx
@@ -23,12 +23,14 @@ modules:
         - atim/starship
     install:
       packages:
-        - vscodium
+        - micro
+        - starship
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
         # "firefox" is the main package, "firefox-langpacks" is a dependency
-        - vscode
+        - firefox
+        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
   - type: default-flatpaks
     configurations:
