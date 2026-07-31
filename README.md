@@ -1,13 +1,12 @@
 # bazzite-dx-codium &nbsp; [![bluebuild build badge](https://github.com/imartyn/bazzite-dx-codium/actions/workflows/build.yml/badge.svg)](https://github.com/imartyn/bazzite-dx-codium/actions/workflows/build.yml)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+This is a bazzite-dx spin with the Microsoft VSCode removed, and VSCodium added.
 
-After setup, it is recommended you update this README to describe your custom image.
+There's also a version you probably don't want to use with the GLPI agent installed which is for enterprise stuff.  I need to install that on my work machine so it exists as well.
+
+If you'd like to do something similar, see the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
 ## Installation
-
-> [!WARNING]  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
 
 To rebase an existing atomic Fedora installation to the latest build:
 
