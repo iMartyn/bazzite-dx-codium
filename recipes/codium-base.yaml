@@ -16,7 +16,7 @@ modules:
         - vscode.repo
     install:
       packages:
-        - vscodium
+        - codium
     remove:
       packages:
         - code
