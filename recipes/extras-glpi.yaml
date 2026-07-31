@@ -7,7 +7,7 @@ modules:
   - type: dnf
     repos:
       copr:
-      - ligenix/enterprise-glpi11
+      - ligenix/enterprise-glpi10
     install:
       packages:
         - glpi-agent
