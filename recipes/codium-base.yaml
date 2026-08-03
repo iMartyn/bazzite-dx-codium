@@ -21,4 +21,8 @@ modules:
       packages:
         - code
 
+  - type: script
+    snippets:
+    - "rm /etc/xdg/autostart/steam.desktop" # We're not removing steam but we don't want it during work hours
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
