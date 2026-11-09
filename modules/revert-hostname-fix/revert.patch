@@ -1,7 +1,7 @@
 diff --git a/system_files/desktop/shared/usr/libexec/bazzite-hardware-setup b/system_files/desktop/shared/usr/libexec/bazzite-hardware-setup
 index 824ad1cb..4fa57a66 100755
---- a/system_files/desktop/shared/usr/libexec/bazzite-hardware-setup
-+++ b/system_files/desktop/shared/usr/libexec/bazzite-hardware-setup
+--- a/usr/libexec/bazzite-hardware-setup
++++ b/usr/libexec/bazzite-hardware-setup
 @@ -293,13 +293,6 @@ if /usr/libexec/hwsupport/needs-hibernation; then
    systemctl enable --now acpid.service
  fi
