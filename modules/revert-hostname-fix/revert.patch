@@ -1,0 +1,18 @@
+diff --git a/system_files/desktop/shared/usr/libexec/bazzite-hardware-setup b/system_files/desktop/shared/usr/libexec/bazzite-hardware-setup
+index 824ad1cb..4fa57a66 100755
+--- a/system_files/desktop/shared/usr/libexec/bazzite-hardware-setup
++++ b/system_files/desktop/shared/usr/libexec/bazzite-hardware-setup
+@@ -293,13 +293,6 @@ if /usr/libexec/hwsupport/needs-hibernation; then
+   systemctl enable --now acpid.service
+ fi
+ 
+-# HOSTNAME FIX
+-# If the hostname is too long Distrobox will fail during setup
+-# Let's check the length and reset it to something sensible if that happens.
+-if (( $(hostname | wc -m) > 20 )); then
+-  hostnamectl set-hostname bazzite
+-fi
+-
+ # Fix missing hostname file breaking distrobox
+ if [ ! -f /etc/hostname ]; then
+   touch /etc/hostname
