@@ -13,13 +13,9 @@ modules:
     source: local
     option: true
 
-  - type: dnf
-    repos:
-      copr:
-      - ligenix/enterprise-glpi10
-    install:
-      packages:
-        - glpi-agent
+  - type: glpi-github-release
+    source: local
+    option: true
 
   - type: dnf
     remove:
